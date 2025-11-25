@@ -115,7 +115,7 @@ def send_email(recipient, subject, body):
 
 
 def send_sms(to_number, body):
-    # Example Twilio integration. Provide TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM in .env
+    #Twilio integration. Provide TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM in .env
     sid = os.getenv('TWILIO_ACCOUNT_SID')
     token = os.getenv('TWILIO_AUTH_TOKEN')
     twilio_from = os.getenv('TWILIO_FROM')
