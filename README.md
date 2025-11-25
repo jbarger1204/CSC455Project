@@ -38,15 +38,3 @@ Security considerations
 - Passwords and OTP hashes use bcrypt. OTPs are ephemeral and stored hashed with expiration.
 - For production: use TLS/SSL for the app, secure SECRET_KEY, a production DB, and real email/SMS providers.
 
-Project cleanup / what to keep in the repository ✅
-- Keep these tracked in git:
-	- `app.py`, `requirements.txt`, `README.md`, `templates/`, `test_flow.py`, `tk_client.py`, helper scripts like `list_users.py` or `reset_password.py`.
-	- `.env.example` — keep this so others can see which env variables are required (do NOT put secrets here).
-
-- Keep these out of git (add to `.gitignore`):
-	- `.env` — live credentials and secrets (copy `.env.example` to `.env` locally).
-	- `.venv/` — local virtual environment
-	- `instance/` or local sqlite DB files (`instance/db.sqlite3` or `db.sqlite3`) — these are local/dev artifacts
-	- `error.log`, `__pycache__/`, `*.pyc` — runtime/log files
-
-If you accidentally committed secrets or large files, remove them from the repository history (e.g. `git rm --cached .env` then commit) and rotate the credentials.
