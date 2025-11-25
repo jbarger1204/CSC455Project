@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Dashboard</h2>
+  <p>Welcome, {{ current_user.email }}. This route is protected and requires 2FA.</p>
+{% endblock %}

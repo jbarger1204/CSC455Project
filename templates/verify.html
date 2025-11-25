@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Enter One-Time Code</h2>
+  <p>We sent a code to <strong>{{ email }}</strong>. It expires in 5 minutes.</p>
+  <form method="post">
+    <label for="code">Code</label>
+    <input id="code" name="code" type="text" inputmode="numeric" pattern="\d{6}" required />
+    <button type="submit">Verify</button>
+  </form>
+{% endblock %}

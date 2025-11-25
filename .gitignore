@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+
+# Environment files
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# SQLite DB
+*.sqlite3
+db.sqlite3
+
+# VS Code
+.vscode/
+
+# Logs
+error.log
+
+# Flask instance folder (keeps instance config local)
+instance/
